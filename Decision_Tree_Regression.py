@@ -16,7 +16,9 @@ print(X)
 print(y)
 
 # Train the Decision Tree Regression model
-
+from sklearn.tree import DecisionTreeRegressor
+regressor = DecisionTreeRegressor(random_state=0)
+regressor.fit(X, y)
 
 # Predict new result
 
